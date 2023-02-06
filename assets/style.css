@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background-color: #003551;
+  padding-bottom: 20px;
+}
+
+header nav {
+  background-color: #003551;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  box-sizing: border-box;
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+  transition: all 0.3s ease;
+  z-index: 99;
+}
+
+header nav .nav-logo > h3 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-left: 10px;
+  color: rgb(32, 180, 137);
+  letter-spacing: 1.5px;
+}
+
+header nav .nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+header nav .nav-menu .nav-item {
+  margin: 0 20px;
+  position: relative;
+}
+
+header nav .nav-menu .nav-item a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+header nav .nav-menu .nav-item a:hover {
+  color: rgb(32, 180, 137);
+}
+
+header nav .navbar-toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  cursor: pointer;
+}
+
+header nav .navbar-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+  background-color: #18898c;
+  display: none;
+}
+
+header nav .navbar-toggle .bar:nth-child(1) {
+  width: 30px;
+}
+header nav .navbar-toggle .bar:nth-child(2) {
+  width: 25px;
+}
+
+header .jumbotron {
+  color: #fff;
+  padding: 120px;
+  padding-top: 170px;
+}
+
+header .jumbotron .button-link {
+  display: flex;
+  margin-top: 20px;
+}
+
+header .jumbotron .button-link .button {
+  padding: 7px 30px;
+  text-decoration: none;
+  color: #fff;
+  box-sizing: content-box;
+  font-weight: 700;
+}
+
+header .jumbotron .button-link .button.hire {
+  background-color: rgb(32, 180, 137);
+  color: #fff;
+}
+
+main {
+  padding: 70px 120px;
+  display: flex;
+  gap: 70px;
+}
+
+main aside {
+  text-align: center;
+}
+
+main aside .profile_photo {
+  border-radius: 50%;
+}
+
+main aside .name {
+  font-size: 32px;
+}
+
+main aside .student {
+  color: rgb(110, 110, 110);
+}
+
+main aside .university {
+  color: #003551;
+  font-weight: 500;
+}
+
+main .content article {
+  margin-bottom: 30px;
+}
+
+main .content .content-item {
+  margin-bottom: 30px;
+}
+
+main .content .content-item ul {
+  margin-left: 20px;
+}
+
+main .content .logo-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+main .content .logo-tools .logo {
+  max-width: 75px;
+  max-height: 75px;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.5s ease;
+}
+
+main .content .logo-tools .logo:hover {
+  -webkit-filter: grayscale(0%);
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+
+.portpolios {
+  padding: 70px 120px;
+}
+
+.portpolios h1 {
+  text-align: center;
+}
+
+.portpolios .project {
+  margin-top: 20px;
+}
+
+.portpolios .project .project-card {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.portpolios .project .project-card:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.portpolios .project .project-card .project-preview {
+  width: 55%;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.portpolios .project .project-card .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.portpolios .project .project-card:nth-child(even) .project-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.portpolios .project .project-card:nth-child(even) .project-info .info {
+  text-align: right;
+}
+
+.portpolios .project .project-card .project-info .info .title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.portpolios .project .project-card .project-info .info .description {
+  color: #5e5e5e;
+}
+
+.portpolios .project .project-card .project-info .info .tools {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.portpolios .project .project-card:nth-child(even) .project-info .info .tools {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.portpolios .project .project-card .project-info .info .tools .tool {
+  max-width: 40px;
+  max-height: 40px;
+  object-fit: contain;
+}
+
+.portpolios .project .project-card .project-info .button .github {
+  padding: 8px 20px;
+  border: 1px solid black;
+  text-decoration: none;
+  color: black;
+  margin-right: 10px;
+  box-sizing: border-box;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.portpolios .project .project-card .project-info .button .github:hover {
+  background-color: black;
+  color: #fff;
+}
+
+.portpolios .project .project-card .project-info .button {
+  margin-bottom: 10px;
+}
+
+.portpolios .project .project-card .project-info .button .view {
+  padding: 8px 20px;
+  background-color: #003551;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+
+.portpolios .project .project-card .project-info .button .view:hover {
+  background-color: #001d2c;
+  border-radius: 10px;
+}
+
+footer {
+  background-color: #003551;
+  color: #fff;
+  padding: 70px 120px;
+  padding-bottom: 20px;
+}
+
+footer .contact {
+  color: rgb(32, 180, 137);
+  text-decoration: none;
+}
+
+footer hr {
+  margin: 10px 0;
+}
+
+footer .copy {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .copy {
+  font-size: 18px;
+}
+
+footer .copy .socmed {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .copy .socmed .socmed-link {
+  font-size: 24px;
+}
+
+footer .copy .socmed .socmed-link a {
+  color: #fff;
+  transition: color 0.5s ease;
+}
+
+footer .copy .socmed .socmed-link a:hover {
+  color: rgb(32, 180, 137);
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    padding: 40px 20px;
+  }
+
+  header nav .navbar-toggle .bar {
+    display: block;
+  }
+
+  header nav .navbar-toggle.is-active .bar:nth-child(1) {
+    width: 30px;
+    transform: translateY(6.5px) rotate(45deg);
+  }
+  header nav .navbar-toggle.is-active .bar:nth-child(2) {
+    width: 30px;
+    transform: translateY(-6.5px) rotate(-45deg);
+  }
+
+  header nav .nav-menu {
+    width: 100vw;
+    height: 200px;
+    background-color: #ffffff;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    align-items: flex-end;
+    justify-content: space-evenly;
+  }
+
+  header nav .nav-menu.active {
+    right: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  header nav .nav-menu.active .nav-item a {
+    color: #18898c;
+    text-align: right;
+    margin: 20px;
+  }
+
+  header .jumbotron {
+    color: #fff;
+    padding: 120px 20px;
+    padding-top: 170px;
+  }
+
+  main {
+    padding: 20px;
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  main h1 {
+    text-align: center;
+  }
+
+  main .content .logo-tools {
+    justify-content: space-evenly;
+  }
+
+  main .content .logo-tools .logo {
+    max-width: 30px;
+    max-height: 30px;
+  }
+
+  .portpolios {
+    padding: 20px;
+  }
+
+  .portpolios .project .project-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portpolios .project .project-card:nth-child(even) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .portpolios .project .project-card .project-preview {
+    width: 100%;
+  }
+
+  .portpolios .project .project-card .project-info {
+    display: block;
+  }
+
+  .portpolios .project .project-card:nth-child(even) .project-info {
+    align-items: flex-start;
+  }
+
+  .portpolios
+    .project
+    .project-card:nth-child(even)
+    .project-info
+    .info
+    .tools {
+    justify-content: flex-start;
+  }
+
+  .portpolios .project .project-card .project-info .button {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  footer {
+    margin-top: 70px;
+    padding: 40px 20px;
+  }
+
+  footer .copy {
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+}
